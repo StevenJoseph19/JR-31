@@ -1,4 +1,4 @@
-package com.pluralsight.tddjunit5;
+package com.mycompany.tddjunit5;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.ExtensionContext.Namespace;
