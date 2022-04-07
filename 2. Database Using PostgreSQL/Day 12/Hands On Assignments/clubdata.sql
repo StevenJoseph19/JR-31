@@ -1,35 +1,13 @@
 --
 -- PostgreSQL database dump
 --
-CREATE DATABASE exercises;
-\c exercises
-CREATE SCHEMA cd;
 
-
-
--- Dumped from database version 9.2.0
--- Dumped by pg_dump version 9.2.0
--- Started on 2013-05-19 16:05:10 BST
-
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SET check_function_bodies = false;
-SET client_min_messages = warning;
-
---
--- TOC entry 7 (class 2615 OID 32769)
--- Name: cd; Type: SCHEMA; Schema: -; Owner: -
---
-
-SET search_path = cd, pg_catalog;
-
-SET default_tablespace = '';
-
-SET default_with_oids = false;
+-- Create database manually by right clicking on Databases in pgAdmin4
+--  CREATE DATABASE exercises;
 
 --
 -- TOC entry 171 (class 1259 OID 32818)
--- Name: bookings; Type: TABLE; Schema: cd; Owner: -; Tablespace:
+-- Name: bookings; Type: TABLE;  Owner: -; Tablespace:
 --
 
 CREATE TABLE bookings (
@@ -43,7 +21,7 @@ CREATE TABLE bookings (
 
 --
 -- TOC entry 169 (class 1259 OID 32770)
--- Name: facilities; Type: TABLE; Schema: cd; Owner: -; Tablespace:
+-- Name: facilities; Type: TABLE;  Owner: -; Tablespace:
 --
 
 CREATE TABLE facilities (
@@ -58,7 +36,7 @@ CREATE TABLE facilities (
 
 --
 -- TOC entry 170 (class 1259 OID 32800)
--- Name: members; Type: TABLE; Schema: cd; Owner: -; Tablespace:
+-- Name: members; Type: TABLE;  Owner: -; Tablespace:
 --
 
 CREATE TABLE members (
@@ -76,7 +54,7 @@ CREATE TABLE members (
 --
 -- TOC entry 2202 (class 0 OID 32818)
 -- Dependencies: 171
--- Data for Name: bookings; Type: TABLE DATA; Schema: cd; Owner: -
+-- Data for Name: bookings; Type: TABLE DATA;  Owner: -
 --
 
 INSERT INTO bookings (bookid, facid, memid, starttime, slots) VALUES
@@ -4129,7 +4107,7 @@ INSERT INTO bookings (bookid, facid, memid, starttime, slots) VALUES
 --
 -- TOC entry 2200 (class 0 OID 32770)
 -- Dependencies: 169
--- Data for Name: facilities; Type: TABLE DATA; Schema: cd; Owner: -
+-- Data for Name: facilities; Type: TABLE DATA;  Owner: -
 --
 
 INSERT INTO facilities (facid, name, membercost, guestcost, initialoutlay, monthlymaintenance) VALUES
@@ -4147,7 +4125,7 @@ INSERT INTO facilities (facid, name, membercost, guestcost, initialoutlay, month
 --
 -- TOC entry 2201 (class 0 OID 32800)
 -- Dependencies: 170
--- Data for Name: members; Type: TABLE DATA; Schema: cd; Owner: -
+-- Data for Name: members; Type: TABLE DATA;  Owner: -
 --
 
 INSERT INTO members (memid, surname, firstname, address, zipcode, telephone, recommendedby, joindate) VALUES
@@ -4186,7 +4164,7 @@ INSERT INTO members (memid, surname, firstname, address, zipcode, telephone, rec
 
 --
 -- TOC entry 2196 (class 2606 OID 32822)
--- Name: bookings_pk; Type: CONSTRAINT; Schema: cd; Owner: -; Tablespace:
+-- Name: bookings_pk; Type: CONSTRAINT;  Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY bookings
@@ -4195,7 +4173,7 @@ ALTER TABLE ONLY bookings
 
 --
 -- TOC entry 2192 (class 2606 OID 32777)
--- Name: facilities_pk; Type: CONSTRAINT; Schema: cd; Owner: -; Tablespace:
+-- Name: facilities_pk; Type: CONSTRAINT;  Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY facilities
@@ -4204,7 +4182,7 @@ ALTER TABLE ONLY facilities
 
 --
 -- TOC entry 2194 (class 2606 OID 32807)
--- Name: members_pk; Type: CONSTRAINT; Schema: cd; Owner: -; Tablespace:
+-- Name: members_pk; Type: CONSTRAINT;  Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY members
@@ -4213,7 +4191,7 @@ ALTER TABLE ONLY members
 
 --
 -- TOC entry 2198 (class 2606 OID 32823)
--- Name: fk_bookings_facid; Type: FK CONSTRAINT; Schema: cd; Owner: -
+-- Name: fk_bookings_facid; Type: FK CONSTRAINT;  Owner: -
 --
 
 ALTER TABLE ONLY bookings
@@ -4222,7 +4200,7 @@ ALTER TABLE ONLY bookings
 
 --
 -- TOC entry 2199 (class 2606 OID 32828)
--- Name: fk_bookings_memid; Type: FK CONSTRAINT; Schema: cd; Owner: -
+-- Name: fk_bookings_memid; Type: FK CONSTRAINT;  Owner: -
 --
 
 ALTER TABLE ONLY bookings
@@ -4231,7 +4209,7 @@ ALTER TABLE ONLY bookings
 
 --
 -- TOC entry 2197 (class 2606 OID 32808)
--- Name: fk_members_recommendedby; Type: FK CONSTRAINT; Schema: cd; Owner: -
+-- Name: fk_members_recommendedby; Type: FK CONSTRAINT;  Owner: -
 --
 
 ALTER TABLE ONLY members
@@ -4245,38 +4223,38 @@ ALTER TABLE ONLY members
 --
 
 CREATE INDEX "bookings.memid_facid"
-  ON cd.bookings
+  ON bookings
   USING btree
   (memid, facid);
 
 CREATE INDEX "bookings.facid_memid"
-  ON cd.bookings
+  ON bookings
   USING btree
   (facid, memid);
 
 CREATE INDEX "bookings.facid_starttime"
-  ON cd.bookings
+  ON bookings
   USING btree
   (facid, starttime);
 
 CREATE INDEX "bookings.memid_starttime"
-  ON cd.bookings
+  ON bookings
   USING btree
   (memid, starttime);
 
 CREATE INDEX "bookings.starttime"
-  ON cd.bookings
+  ON bookings
   USING btree
   (starttime);
 
 CREATE INDEX "members.joindate"
-  ON cd.members
+  ON members
   USING btree
   (joindate);
 
 CREATE INDEX "members.recommendedby"
-  ON cd.members
+  ON members
   USING btree
   (recommendedby);
 
-ANALYZE;
+
