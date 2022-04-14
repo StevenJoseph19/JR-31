@@ -3,6 +3,7 @@ target/*
 .classpath
 .project
 /target
+.gradle
 .sts4-cache/
 .vscode/*
 !.vscode/settings.json
