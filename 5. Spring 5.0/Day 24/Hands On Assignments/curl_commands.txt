@@ -1,0 +1,3 @@
+curl -v   http://localhost:8080/ads -H "Content-type:application/json" -d "{\"owner\":\"Spring validation test 2\",\"description\":\"Pretty coool\", \"title\":\"abc\",\"price\":\"9.99\"}"
+
+curl -v   http://localhost:8080/ads -H "Content-type:application/json" -d "{\"owner\":\"me\",\"title\":\"My Car\",\"price\":\"-10\"}"
