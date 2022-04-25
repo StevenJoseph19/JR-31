@@ -1,0 +1,10 @@
+// This shows a simple example of scripted pipeline
+
+node{
+
+	stage "Create build output"
+
+	// Make the output directory
+	
+	sh " mkdir -p output"	
+}
