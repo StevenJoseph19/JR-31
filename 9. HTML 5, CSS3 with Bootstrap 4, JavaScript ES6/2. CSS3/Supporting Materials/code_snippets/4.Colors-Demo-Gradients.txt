@@ -1,0 +1,18 @@
+body {
+    background:         -webkit-gradient(  				
+                        linear, left bottom, left top,  				
+                        color-stop(0.70, #00AAAA),  				
+                        color-stop(0.30, #432100));
+    background:         -ms-linear-gradient(
+                        bottom, 	            
+                        #432100 30%, 				
+                        #00AAAA 70%);
+}
+.grad{ 
+    background: #FFFFFF; 
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#00AAAA'); /* IE6 & IE7 */ 
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#00AAAA')"; /* IE8 */ 
+    background: -webkit-linear-gradient(#FFFFFF, #00AAAA); /*new webkit*/ 
+    background: -ms-linear-gradient(bottom, #FFFFFF 50%, #00AAAA 50%); /* IE10 */ 
+    background: linear-gradient(#FFFFFF, #00AAAA); /*future CSS3 browsers*/ 
+}
