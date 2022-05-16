@@ -1,0 +1,6 @@
+ <div class="mb-5">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="saveShipping">
+                                <label class="custom-control-label" for="saveShipping">Remember my shipping information</label>
+                            </div>
+                        </div>

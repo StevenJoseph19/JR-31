@@ -1,0 +1,82 @@
+@media screen and (max-width: 800px) {
+#subtitle{   
+        font-size:                      2em;        
+    }
+   
+	#title {
+       -webkit-transition:              0s;
+       -ms-transition:                  0s;
+       -transition:                     0s;                 
+        font-size:                      4em;               
+    }
+
+#about {
+        display:                        inherit;     
+        background-position: left bottom, right top;
+        background-size:                20%, 50%; 
+    }
+ 
+	#about p {
+        -webkit-transform:  rotate(16deg) 
+                            translate(22em,8em) 
+                            scale(2);
+        -ms-transform:      rotate(16deg) 
+                            translate(22em,8em) 
+                            scale(2);
+        transform:          rotate(16deg) 
+                            translate(22em,8em) 
+                            scale(2);
+    }
+
+#content {
+        width: 35em;
+    }
+    nav a {
+        color:  #FFEDDB   
+    }
+    article, section, footer {
+        width: 33em;    
+    }
+    footer {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+}
+*************************************************************************************************************************
+*************************************************************************************************************************
+
+
+@media screen and (max-width:480px), (max-device-width:480px) {
+    body {
+        font-size: 75%;
+    }
+    #title {
+        font-size: 3em;
+    }
+    #content {
+        width: 30em;
+    }
+    article, section, footer {
+        width: 28em;    
+    }
+    #about p {
+        -webkit-transform:  rotate(7deg) 
+                            translate(10em,8em) 
+                            scale(1.5);
+        -ms-transform:      rotate(7deg) 
+                            translate(10em,8em) 
+                            scale(1.5);
+        transform:          rotate(7deg) 
+                            translate(10em,8em) 
+                            scale(1.5);
+    }
+    #topics li {
+        padding:     0.4375em;
+    }
+    #topics li p {
+        font-size:   0.8125em;
+    }
+}
+*************************************************************************************************************************
+*************************************************************************************************************************

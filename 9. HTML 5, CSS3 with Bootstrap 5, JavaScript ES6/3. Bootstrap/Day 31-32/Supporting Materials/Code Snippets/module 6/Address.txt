@@ -1,0 +1,13 @@
+   <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">Your address</h4>
+                    <form class="needs-validation" action="order.html" method="get" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3 form-group">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Your first name">
+                            </div>
+                            <div class="col-md-6 mb-3 form-group">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Your last name">
+                            </div>
+                        </div>

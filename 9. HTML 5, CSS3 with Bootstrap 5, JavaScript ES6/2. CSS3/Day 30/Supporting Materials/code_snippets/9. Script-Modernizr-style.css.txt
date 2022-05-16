@@ -1,0 +1,53 @@
+.no-textshadow nav a {
+    color: 							#FFBB77;
+    font-weight: 					bold;
+}
+
+.no-textshadow nav a:hover {
+    color: 							#FFEDDB;
+}
+
+.no-cssgradients * {
+    border-radius:                  0!important;
+}
+
+/* taken from layout */
+.csscolumns #topics ul {
+    -webkit-column-count:           3;    
+    column-count:                   3;
+    -webkit-column-gap:             0;    
+    column-gap:                     0;
+}
+
+/* taken from borders */
+.csscolumns #topics ul{
+    border-radius:                  2em;
+}
+.csscolumns #topics li:first-child {
+    border-top-left-radius:         2em; 
+}
+.csscolumns #topics li:nth-child(4) {
+    border-bottom-left-radius:      2em; 
+}
+.csscolumns #topics li:nth-child(9) {
+    border-top-right-radius:        2em; 
+}
+.csscolumns #topics li:last-child {
+    border-bottom-right-radius:     2em; 
+}
+.csscolumns #topics ul {
+    box-shadow:                     .5em .5em .5em #555555;
+}
+
+/* taken from colors */
+.no-cssgradients .grad { 
+    background: #FFFFFF; 
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#00AAAA'); /* IE6 & IE7 */ 
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#00AAAA')"; /* IE8 */ 
+}
+
+.cssgradients .grad {
+    background: -webkit-linear-gradient(bottom,#FFFFFF, #00AAAA); 
+    background: -ms-linear-gradient(bottom, #FFFFFF, #00AAAA); 
+    background: linear-gradient(bottom, #FFFFFF, #00AAAA);
+}

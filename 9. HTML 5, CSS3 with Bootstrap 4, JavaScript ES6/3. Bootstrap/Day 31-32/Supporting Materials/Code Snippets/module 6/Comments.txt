@@ -1,6 +1,0 @@
-  <div class="mb-3">
-                            <div class="form-group">
-                                <label for="remarks">Remarks</label>
-                                <textarea class="form-control" id="remarks" rows="3"></textarea>
-                            </div>
-                        </div>
