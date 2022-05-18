@@ -13,7 +13,7 @@ class HouseFilter extends Component {
           Look for your dream house in country:
         </div>
         <div className="col-md-4">
-          <select className="form-select >
+          <select className="form-select" >
             {countries.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
         </div>
