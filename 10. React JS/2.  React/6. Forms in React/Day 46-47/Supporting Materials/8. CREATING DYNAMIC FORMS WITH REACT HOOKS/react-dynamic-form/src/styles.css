@@ -1,0 +1,11 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+label {
+  min-width: 200px;
+  display: inline-block;
+  padding-right: 10px;
+  text-align: right;
+}
